@@ -1,1 +1,8 @@
 buildPack: appserver
+pipelineConfig:
+  pipelines:
+    release:
+      postBuild:
+        replace: true
+        steps:
+        - command: echo 'done'
