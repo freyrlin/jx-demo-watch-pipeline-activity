@@ -1,1 +1,7 @@
 buildPack: appserver
+pipelineConfig:
+  pipelines:
+    pullRequest:
+      build:
+        steps:
+        - command: echo 'pull request build done'
