@@ -1,5 +1,7 @@
 buildPack: appserver
 pipelineConfig:
+  agent:
+    image: gcr.io/jenkinsxio/builder-maven:0.1.617
   pipelines:
     pullRequest:
       build:
